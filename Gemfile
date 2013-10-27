@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 gem 'devise', '~> 3.1.1' #this is the latest version and has been updated since the video
 
+gem "barby", :require => "barby/outputter/png_outputter", :require => "barby", :require => "barby/barcode/code_128", :require => "barby/outputter/html_outputter"
+gem "has_barcode"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
