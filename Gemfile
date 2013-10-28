@@ -32,6 +32,8 @@ gem 'devise', '~> 3.1.1' #this is the latest version and has been updated since 
 gem "barby", :require => "barby/outputter/png_outputter", :require => "barby", :require => "barby/barcode/code_128", :require => "barby/outputter/html_outputter"
 gem "has_barcode"
 
+
+gem "prawn-labels", :require => "prawn/labels"
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

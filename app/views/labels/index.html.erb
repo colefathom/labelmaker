@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Number</th>
+      <th>Barcode</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,6 +15,7 @@
     <% @labels.each do |label| %>
       <tr>
         <td><%= label.number %></td>
+        <td><%= label.barcode_data.html_safe %></td>
         <td><%= link_to 'Show', label %></td>
         <td><%= link_to 'Edit', edit_label_path(label) %></td>
         <td><%= link_to 'Destroy', label, method: :delete, data: { confirm: 'Are you sure?' } %></td>
