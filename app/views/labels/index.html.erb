@@ -1,5 +1,6 @@
 <h1>Listing labels</h1>
-
+<%= link_to 'New Label', new_label_path %>
+<!--
 <table>
   <thead>
     <tr>
@@ -27,3 +28,29 @@
 <br>
 
 <%= link_to 'New Label', new_label_path %>
+
+-->
+<div class ="row">
+<div class = "col-md-6">
+<div id="labels">
+  <% @labels.each do |label| %>
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= label.number %></div>
+      <div class="panel-body">
+      <%= label.barcode_data.html_safe %>
+      <br>
+      <%= label.number %>
+      <br>
+      <%= link_to 'Show', label %>
+      <%= link_to 'Edit', edit_label_path(label) %>
+      <%= link_to 'Destroy', label, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+      </div>
+      <% end %>
+      
+    </div>
+  </div>
+
+  
+</div>
+
