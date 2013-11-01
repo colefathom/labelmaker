@@ -5,4 +5,5 @@ class PagesController < ApplicationController
   def labels
   end
   
+  
 end

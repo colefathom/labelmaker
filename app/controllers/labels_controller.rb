@@ -21,6 +21,8 @@ class LabelsController < ApplicationController
   def edit
   end
 
+  
+
   # POST /labels
   # POST /labels.json
   def create
@@ -69,6 +71,6 @@ class LabelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def label_params
-      params.require(:label).permit(:number)
+      params.require(:label).permit(:number, :technology, :customer, :duedate, :shippingmethod, :buildlocation, :new)
     end
 end

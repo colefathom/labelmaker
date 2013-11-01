@@ -8,8 +8,15 @@ $navbar-default-bg:                      white;
 
 $brand-primary:                          #c0392b;
 $jumbotron-bg:                             white;
+$badge-bg:							 	 #f1c40f;
+$badge-color:							   black;
+
+
+
+
 
 @import 'bootstrap';
+@import 'bootstrap-datetimepicker';
 
 .center {
      text-align: center;

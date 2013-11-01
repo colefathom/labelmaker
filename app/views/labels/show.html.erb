@@ -6,6 +6,17 @@
 </p>
 
 <%= @label.barcode_data.html_safe %>
+<br>
+<%= @label.customer %>
+<br>
+<%= @label.duedate %>
+<br>
+<%= @label.technology %>
+<br>
+<%= @label.shippingmethod %>
+<br>
+<%= @label.buildlocation %>
 
+<br>
 <%= link_to 'Edit', edit_label_path(@label) %> |
 <%= link_to 'Back', labels_path %>

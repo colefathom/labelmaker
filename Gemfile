@@ -31,9 +31,14 @@ gem 'devise', '~> 3.1.1' #this is the latest version and has been updated since 
 
 gem "barby", :require => "barby/outputter/png_outputter", :require => "barby", :require => "barby/barcode/code_128", :require => "barby/outputter/html_outputter"
 gem "has_barcode"
+gem 'simple_form'
 
-
-gem "prawn-labels", :require => "prawn/labels"
+#gem "prawn", :require => "prawn"
+#gem "prawn-labels", :require => "prawn/labels"
+gem 'prawn_rails'
+gem "prawn-svg"
+# SORRY! But the 'datetimepicker-rails' name in RubyGems repo already taken.
+gem "bootstrap-datepicker-rails", "~> 1.1.1.8"
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

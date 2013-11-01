@@ -6,6 +6,7 @@ include HasBarcode
     :outputter => :svg,
     :type => :code_128,
     :value => Proc.new { |c| c.number }
+
 end
 
  
